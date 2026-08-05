@@ -1,35 +1,152 @@
-<html>
-    <head>
-    <title>Scone The Orange Cat</title>
-    <link rel="SconeStyle" href="SconeStyle.css">
-    </head>
+<!DOCTYPE html>
+<html lang="en">
 
-    <body>
-        <header>
-            <h1>Scone The Orange Cat</h1>
-        </header>
-        <section class="cat random pictures">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/approve.css">
 
-            <img src="Images/SleepClose.jpg" alt="SleepClose" id="SleepClose" 
-            style="width:250px; height:300px;"/>
-            
-         </section>
-         
-         <section class="Origin Story">
-            <h2>Introduction</h2>
-            <p>
-                Scone was found in The University of Fiji, near the steps of the Saweni Campus.
-                He was following around a female black cat. Feintwell was taking pictures of the black beauty when a nursing student had approached and grabbed Scone.
-                Feintwell was oblivious to Scone until that moment, and the kind girl told Feintwell that the kittens of the university can be taken home.
-                There was hearts in Feintwell's eyes as she claimed the orange kitten. The kind girl took a black kitten, both were put in a box in the bookshop for the rest of the day.
-                At 4, after both the women had finished their classes, they came to get the 2 kittens. The black kitten was taken by the girl in her hands and her parents picked her from the university campus. 
-                Feintwell took the box with the docile orange kitten to the bus, for an hour and as half ride home.
-                The kitten was wrapped in Feintwell's jacket in the box and practically slept the whole ride to his new home
-            </p>
-            <img src="Images/SconeBox.jpg" alt="SconeBox" id="SconeBox" 
-            width="250" height="300"/>
-         </section>
+</head>
 
+<body>
+    <main>
+        <div class="head">
+            <a class="title" href="index.html">
+                <h1>Fiji Web Directory</h1>
+            </a>
+        </div>
 
-    </body>
+        <nav>
+            <div class="topnav">
+                <a href="index.html">Home</a>
+                <a href="categories.html">Categories</a>
+                <a href="search.html">Search</a>
+                <a class="right" href="submit.html">Submit Listing</a>
+                <a class="right" href="signin.html">Sign-In</a>
+            </div>
+        </nav>
+
+        <div class="container">
+            <!-- Section 1: Approve/Delete Listings -->
+            <section id="approve-delete-section">
+                <h2>Approve or Delete Listings</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Title</th>
+                            <th>Category</th>
+                            <th>Status</th>
+                            <th>Sub Category</th>
+                            <th>Island</th>
+                            <th>Province</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>The University of Fiji</td>
+                            <td>Education</td>
+                            <td class="status-pending">Pending</td>
+                            <td>University</td>
+                            <td>Viti Levu</td>
+                            <td>Central</td>
+                            <td>
+                                <button class="btn approve-btn">Approve</button>
+                                <button class="btn delete-btn">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Fiji National University</td>
+                            <td>Education</td>
+                            <td class="status-pending">Pending</td>
+                            <td>University</td>
+                            <td>Viti Levu</td>
+                            <td>Central</td>
+                            <td>
+                                <button class="btn approve-btn">Approve</button>
+                                <button class="btn delete-btn">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>University of South Pacific</td>
+                            <td>Education</td>
+                            <td class="status-approved">Approved</td>
+                            <td>University</td>
+                            <td>Viti Levu</td>
+                            <td>Central</td>
+                            <td>
+                                <button class="btn approve-btn">Approve</button>
+                                <button class="btn delete-btn">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Section 2: Edit/Delete Listings -->
+            <section id="edit-delete-section">
+                <h2>Edit or Delete Listings</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Title</th>
+                            <th>Category</th>
+                            <th>Status</th>
+                            <th>Sub Category</th>
+                            <th>Island</th>
+                            <th>Province</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>The University of Fiji</td>
+                            <td>Education</td>
+                            <td class="status-approved">Approved</td>
+                            <td>University</td>
+                            <td>Viti Levu</td>
+                            <td>Central</td>
+                            <td>
+                                <button class="btn edit-btn">Edit</button>
+                                <button class="btn delete-btn">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Fiji National University</td>
+                            <td>Education</td>
+                            <td class="status-approved">Approved</td>
+                            <td>University</td>
+                            <td>Viti Levu</td>
+                            <td>Central</td>
+                            <td>
+                                <button class="btn edit-btn">Edit</button>
+                                <button class="btn delete-btn">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p id="footer-left">
+            &copy; <a href="index.html">FijiWebDirectory</a>. All rights reserved.
+        </p>
+        <p id="footer-right">
+            <a href="contact-us.html" class="footer-right-items">Contact Us</a> |
+            <a href="terms-of-use.html" class="footer-right-items">Terms Of Use</a>
+        </p>
+    </footer>
+</body>
+
 </html>
